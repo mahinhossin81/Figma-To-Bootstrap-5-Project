@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #FAFAFA;
+}
+
+/* Global Selector-------------------------- */
+
+.hide {
+    display: none;
+}
+
+button:hover {
+    transition: all 1s ease;
+}
+
+
+/* Custom ScrollBar------------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DC3545;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Navbar Part------------------------------ */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #DC3545;
+}
+
+
+/* Hero Section Part------------------------- */
+.hero .hero_heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 78px;
+}
+
+
+
+/* Customers Talking Section------------------ */
+.customers {
+    background: url(images/customers.png) no-repeat;
+    background-position: right bottom;
+
+}
+
+.talking_section {
+    padding-bottom: 100px;
+}
+
+
+/* Footer Section----------------------------- */
+.footer_section {
+    display: flex;
+}
+
+.footer_section .footer_item:nth-child(1){
+    width: 25%;
+}
+
+
+
+
+/* Responsive Design--------------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .hero .hero_heading {
+            font-size: 3.3rem;
+        }
+
+    /* Footer Section-------------------------- */
+
+    .footer_item:nth-child(1) img {
+        display: block;
+    }
+
+    .footer_item:nth-child(1) {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin: auto;
+    }
+    .footer_section {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+       
+    }
+
+    .footer_item {
+        margin-bottom: 22px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .work_section {
+        height: 300px;
+    }
+
+
+    /* Customers Talking Section---------------- */
+
+    .listenTo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking_section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .columns {
+            width: 100% !important;
+        }
+    }
+}
